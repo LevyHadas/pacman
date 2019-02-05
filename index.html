@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Pacman</title>
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+
+<body onload="init()" onkeydown="movePacman(event)">
+  <div class="modal lose">
+    <h1>GAME<br />OVER!!</h1>
+    <button class="restart-btn" onclick="init()">RESTART</button>
+  </div>
+  <div class="modal win">
+    <h1>YOU WIN<br /><span></span></h1>
+    <button class="restart-btn" onclick="init()">RESTART</button>
+  </div>
+  <div class="board-container"></div>
+  
+  <header>
+    <h3>Score: <span>0</span> </h3>
+  </header>
+  <script src="js/util.js"></script>
+  <script src="js/pacman.js"></script>
+  <script src="js/ghosts.js"></script>
+  <script src="js/game.js"></script>
+</body>
+
+</html>
